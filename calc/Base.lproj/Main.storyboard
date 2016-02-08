@@ -24,6 +24,9 @@
                                     <constraint firstAttribute="width" secondItem="cs3-g3-Trh" secondAttribute="height" multiplier="1:1" id="aBr-y5-rXs"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="Q3Q-Am-MMf">
+                                <rect key="frame" x="0.0" y="498" width="600" height="102"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iqT-98-8pZ">
                                 <rect key="frame" x="175" y="77" width="250" height="446"/>
                                 <subviews>
@@ -193,6 +196,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ys8-cO-nWB">
+                                <rect key="frame" x="448" y="88" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -201,9 +210,12 @@
                             <constraint firstItem="iqT-98-8pZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="98T-Oq-RVw"/>
                             <constraint firstAttribute="trailing" secondItem="cs3-g3-Trh" secondAttribute="trailing" id="IWs-Ge-3bF"/>
                             <constraint firstItem="cs3-g3-Trh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UW7-II-Urx"/>
+                            <constraint firstAttribute="trailing" secondItem="Q3Q-Am-MMf" secondAttribute="trailing" id="eJw-G2-az5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cs3-g3-Trh" secondAttribute="bottom" id="fyr-PX-LNE"/>
                             <constraint firstItem="kcH-Et-SaU" firstAttribute="centerX" secondItem="iqT-98-8pZ" secondAttribute="centerX" id="kTe-2X-I5m"/>
                             <constraint firstItem="cs3-g3-Trh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tmz-VY-6Z7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q3Q-Am-MMf" secondAttribute="bottom" id="wPl-Uq-f44"/>
+                            <constraint firstItem="Q3Q-Am-MMf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yFY-8w-mZZ"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -228,6 +240,7 @@
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
+        <image name="ground" width="888" height="72"/>
         <image name="multiply" width="111" height="114"/>
         <image name="space-bg" width="988" height="946"/>
         <image name="subtract" width="111" height="114"/>
